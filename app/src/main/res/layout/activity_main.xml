@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+   <Button
+       android:text="Alert"
+       android:textSize="@dimen/_30ssp"
+       android:layout_margin="@dimen/_10sdp"
+       android:fontFamily="cursive"
+       android:id="@+id/bu_button_alert"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:onClick="AlertDialog" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rv_names"
+       android:orientation="vertical"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       tools:listitem="@layout/item_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>
